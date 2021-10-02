@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <header>
+  <h1>Welcome to blog website</h1>
+ </header>
+ <main>
+  <section>
+   <article>
+    <h3>My Awesome blog-1</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, asperiores itaque quia excepturi cupiditate officia amet hic dicta pariatur, fugiat alias ea explicabo quis sapiente, fuga ullam iusto voluptatum quae!</p>
+   </article>
+   <article>
+    <h3>My Awesome blog-2</h3>
+    <p>Nihil, quas? Nulla maxime eos neque assumenda voluptatum porro quaerat enim ratione voluptatibus. Totam, veritatis voluptates magnam eveniet rem facilis, quisquam tempora ab temporibus dignissimos impedit nam amet, nihil quis.</p>
+   </article>
+   <article>
+    <h3 id="third">My Awesome blog-3</h3>
+    <p>At laboriosam perferendis officiis natus illum aspernatur repellat itaque cum provident minus, corporis ipsa adipisci rem aliquam iste, recusandae, quasi officia excepturi quos consectetur fugiat reiciendis sapiente inventore? Odio, libero?</p>
+   </article>
+  </section>
+ </main>
+ <!-- what is dom?? -->
+ <!-- accessing html using js -->
+ <script>
+  //23-4(Getting elements by tagname)
+  const student={name:'Rohmot',Age:32,Gender:'Male'}
+  // document.getElementsByTagName('h3')
+  const blogTitles=document.getElementsByTagName('h3')
+  for (const h3 of blogTitles){
+   // console.log(h3.innerText)
+  }
+  const detail=document.getElementsByTagName('p');
+  for (const p of detail){
+   // console.log(p.innerText)
+  }
+  //23-5 get elements by id and change them
+  const thirdTitle= document.getElementById('third');
+  thirdTitle.innerText = 'Updated';
+  thirdTitle.style.color='red';
+  thirdTitle.style.paddingLeft='300px'
+ </script>
+</body>
+</html>
